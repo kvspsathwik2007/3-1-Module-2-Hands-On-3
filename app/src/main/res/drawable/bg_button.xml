@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <gradient
+        android:angle="0"
+        android:startColor="@color/astra_blue"
+        android:endColor="@color/astra_violet" />
+
+    <corners android:radius="@dimen/button_radius" />
+
+    <padding
+        android:left="20dp"
+        android:top="4dp"
+        android:right="20dp"
+        android:bottom="4dp" />
+
+</shape>

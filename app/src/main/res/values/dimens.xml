@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <!-- Screen -->
+    <dimen name="screen_padding">20dp</dimen>
+
+    <!-- Cards -->
+    <dimen name="card_radius">22dp</dimen>
+    <dimen name="card_padding">18dp</dimen>
+
+    <!-- Input -->
+    <dimen name="input_radius">20dp</dimen>
+    <dimen name="input_padding">16dp</dimen>
+
+    <!-- Button -->
+    <dimen name="button_radius">18dp</dimen>
+
+    <!-- Text -->
+    <dimen name="title_size">30sp</dimen>
+    <dimen name="subtitle_size">14sp</dimen>
+    <dimen name="body_size">14sp</dimen>
+    <dimen name="label_size">11sp</dimen>
+
+</resources>

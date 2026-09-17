@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape>
+            <gradient
+                android:angle="315"
+                android:startColor="@color/astra_bg"
+                android:centerColor="@color/astra_bg_secondary"
+                android:endColor="@color/astra_bg_tertiary" />
+        </shape>
+    </item>
+
+</layer-list>

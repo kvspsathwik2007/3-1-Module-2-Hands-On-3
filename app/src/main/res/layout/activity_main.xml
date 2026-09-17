@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/bg_screen"
+    android:clipToPadding="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="22dp"
+        android:paddingBottom="28dp">
+
+        <!-- =============================== -->
+        <!-- AI BADGE -->
+        <!-- =============================== -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingStart="12dp"
+            android:paddingEnd="14dp"
+            android:background="@drawable/bg_card">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_spark"
+                android:contentDescription="@null" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/app_badge"
+                android:textColor="@color/astra_cyan"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.08" />
+
+        </LinearLayout>
+
+
+        <!-- =============================== -->
+        <!-- TITLE -->
+        <!-- =============================== -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:text="@string/title"
+            android:textColor="@color/text_primary"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+
+        <!-- =============================== -->
+        <!-- SUBTITLE -->
+        <!-- =============================== -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/subtitle"
+            android:textColor="@color/text_secondary"
+            android:textSize="14sp"
+            android:lineSpacingExtra="3dp" />
+
+
+        <!-- =============================== -->
+        <!-- INPUT LABEL -->
+        <!-- =============================== -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/input_label"
+            android:textColor="@color/astra_blue"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.12" />
+
+
+        <!-- =============================== -->
+        <!-- TASK INPUT -->
+        <!-- =============================== -->
+
+        <EditText
+            android:id="@+id/etTask"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_input"
+            android:gravity="top|start"
+            android:hint="@string/task_hint"
+            android:textColorHint="@color/text_muted"
+            android:textColor="@color/text_primary"
+            android:textSize="15sp"
+            android:padding="18dp"
+            android:inputType="textMultiLine|textCapSentences"
+            android:scrollbars="vertical"
+            android:overScrollMode="ifContentScrolls" />
+
+
+        <!-- =============================== -->
+        <!-- COMPARE BUTTON -->
+        <!-- =============================== -->
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCompare"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/compare_button"
+            android:textColor="@color/text_primary"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:background="@drawable/bg_button"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            app:cornerRadius="18dp"
+            app:icon="@drawable/ic_spark"
+            app:iconTint="@color/text_primary"
+            app:iconGravity="textStart"
+            app:iconPadding="10dp" />
+
+
+        <!-- =============================== -->
+        <!-- LOADING -->
+        <!-- =============================== -->
+
+        <LinearLayout
+            android:id="@+id/loadingContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ProgressBar
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:indeterminate="true"
+                android:indeterminateTint="@color/astra_cyan" />
+
+            <TextView
+                android:id="@+id/tvLoading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/comparing"
+                android:textColor="@color/text_secondary"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+
+        <!-- =============================== -->
+        <!-- RESULTS HEADER -->
+        <!-- =============================== -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/results_label"
+                android:textColor="@color/astra_purple"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.12" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="@string/same_task"
+                android:textColor="@color/text_muted"
+                android:textSize="10sp"
+                android:letterSpacing="0.08" />
+
+        </LinearLayout>
+
+
+        <!-- =============================== -->
+        <!-- RESULTS RECYCLER VIEW -->
+        <!-- =============================== -->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvResults"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:nestedScrollingEnabled="false"
+            android:overScrollMode="never"
+            android:clipToPadding="false" />
+
+
+        <!-- =============================== -->
+        <!-- FOOTER -->
+        <!-- =============================== -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="45dp"
+                android:layout_height="1dp"
+                android:background="@color/card_stroke" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="@string/comparison_note"
+                android:textColor="@color/text_muted"
+                android:textSize="11sp"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

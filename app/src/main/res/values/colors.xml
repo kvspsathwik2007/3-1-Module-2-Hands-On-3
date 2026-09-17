@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <!-- Main Astra Colors -->
+    <color name="astra_blue">#6EA8FF</color>
+    <color name="astra_cyan">#67E8F9</color>
+    <color name="astra_purple">#A78BFA</color>
+    <color name="astra_violet">#8B5CF6</color>
+
+    <!-- Background -->
+    <color name="astra_bg">#070A12</color>
+    <color name="astra_bg_secondary">#0B1020</color>
+    <color name="astra_bg_tertiary">#111827</color>
+
+    <!-- Other Background Names -->
+    <color name="background_dark">#070A12</color>
+    <color name="surface_dark">#0D1220</color>
+
+    <!-- Cards / Glass -->
+    <color name="card_background">#111827</color>
+    <color name="card_stroke">#263247</color>
+    <color name="glass_border">#263247</color>
+
+    <!-- Text -->
+    <color name="text_primary">#F8FAFC</color>
+    <color name="text_secondary">#B8C2D6</color>
+    <color name="text_muted">#71809A</color>
+
+</resources>

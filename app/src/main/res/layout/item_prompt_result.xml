@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="14dp"
+    android:orientation="vertical"
+    android:background="@drawable/bg_card"
+    android:padding="18dp">
+
+    <!-- Strategy Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="24dp"
+            android:background="@color/astra_blue" />
+
+        <TextView
+            android:id="@+id/tvStrategy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:text="ZERO-SHOT"
+            android:textColor="@color/astra_blue"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.08" />
+
+    </LinearLayout>
+
+    <!-- Response Label -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="@string/response_label"
+        android:textColor="@color/text_muted"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        android:letterSpacing="0.08" />
+
+    <!-- AI Response -->
+    <TextView
+        android:id="@+id/tvResponse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:text="AI response will appear here..."
+        android:textColor="@color/text_primary"
+        android:textSize="@dimen/body_size"
+        android:lineSpacingExtra="4dp"
+        android:textIsSelectable="true" />
+
+</LinearLayout>

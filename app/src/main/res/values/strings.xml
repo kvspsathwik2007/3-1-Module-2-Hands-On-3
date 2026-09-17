@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Prompting Engineering Lab</string>
+
+    <string name="app_badge">AI PROMPT LAB • HANDS-ON 3</string>
+
+    <string name="title">Prompting Engineering Lab</string>
+
+    <string name="subtitle">
+        Compare how different prompting strategies shape AI responses.
+    </string>
+
+    <string name="input_label">YOUR TASK</string>
+
+    <string name="task_hint">
+        Enter the same task for all prompting strategies...
+    </string>
+
+    <string name="compare_button">Compare Prompts</string>
+
+    <string name="comparing">Comparing prompts...</string>
+
+    <string name="results_label">PROMPT COMPARISON</string>
+
+    <string name="same_task">
+        SAME TASK • DIFFERENT PROMPT STRATEGIES
+    </string>
+
+    <string name="response_label">Response</string>
+
+    <string name="zero_shot">ZERO-SHOT</string>
+    <string name="few_shot">FEW-SHOT</string>
+    <string name="chain_of_thought">CHAIN-OF-THOUGHT</string>
+
+    <string name="comparison_note">
+        All three strategies were tested on the same task.
+    </string>
+
+</resources>
